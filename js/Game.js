@@ -217,11 +217,11 @@ class Game {
 
   showLife() {
     push();
-    image(lifeImage, width / 2 - 130, height - player.positionY - 730, 20, 20);
+    image(lifeImage, width / 2 - 130, height - player.positionY - 720, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 730, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 720, 185, 20);
     fill("#f50057");
-    rect(width / 2 - 100, height - player.positionY - 730, player.life, 20);
+    rect(width / 2 - 100, height - player.positionY - 720, player.life, 20);
     noStroke();
     pop();
   }
