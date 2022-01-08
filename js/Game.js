@@ -217,22 +217,22 @@ class Game {
 
   showLife() {
     push();
-    image(lifeImage, width / 2 - 130, height - player.positionY - 400, 20, 20);
+    image(lifeImage, width / 2 - 130, height - player.positionY - 750, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 400, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 750, 185, 20);
     fill("#f50057");
-    rect(width / 2 - 100, height - player.positionY - 400, player.life, 20);
+    rect(width / 2 - 100, height - player.positionY - 750, player.life, 20);
     noStroke();
     pop();
   }
 
   showFuelBar() {
     push();
-    image(fuelImage, width / 2 - 130, height - player.positionY - 350, 20, 20);
+    image(fuelImage, width / 2 - 130, height - player.positionY - 700, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 350, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 700, 185, 20);
     fill("#ffc400");
-    rect(width / 2 - 100, height - player.positionY - 350, player.fuel, 20);
+    rect(width / 2 - 100, height - player.positionY - 700, player.fuel, 20);
     noStroke();
     pop();
   }
@@ -338,7 +338,7 @@ class Game {
       }
       player.update();
     }
-   // obstacles.remove()  
+   // obstacles.remove()
   }
 
   handleCarACollisionWithB(index){
@@ -409,3 +409,4 @@ class Game {
     });
   }
 }
+
